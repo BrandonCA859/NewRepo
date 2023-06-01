@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\progra carp\\api\\Proyecto\\Proyecto.csproj": {}
+    "C:\\Users\\brand\\Documents\\Proyecto git\\Proyecto\\Proyecto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\progra carp\\api\\Proyecto\\Proyecto.csproj": {
+    "C:\\Users\\brand\\Documents\\Proyecto git\\Proyecto\\Proyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\progra carp\\api\\Proyecto\\Proyecto.csproj",
+        "projectUniqueName": "C:\\Users\\brand\\Documents\\Proyecto git\\Proyecto\\Proyecto.csproj",
         "projectName": "Proyecto",
-        "projectPath": "C:\\Users\\User\\Documents\\progra carp\\api\\Proyecto\\Proyecto.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\progra carp\\api\\Proyecto\\obj\\",
+        "projectPath": "C:\\Users\\brand\\Documents\\Proyecto git\\Proyecto\\Proyecto.csproj",
+        "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brand\\Documents\\Proyecto git\\Proyecto\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
