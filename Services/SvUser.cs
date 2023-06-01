@@ -1,4 +1,5 @@
 ﻿using DataAccess;
+using DataAccess.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class SvUser
+    public class SvUser : ISvUser
     {
 
         private readonly MyDbContext _myDbContext;
@@ -18,5 +19,39 @@ namespace Services
         {
             _myDbContext = myDbContext;
         }
+
+        public User Add(User user)
+        {
+            _myDbContext.Users.Add(user);
+            _myDbContext.SaveChanges();
+
+            return user;
+        }
+
+
+        public List<User> ListUsers()
+        {
+            return _myDbContext.Users.ToList();
+        }
+
+        public void Update(User user)
+        {
+
+            Console.WriteLine("Update");
+        }
+
+
+        public void Delete(int id)
+        {
+            User userFound = _myDbContext.Users.Where(user => user.IdUser == id).FirstOrDefault();
+
+            _myDbContext.Users.Remove(userFound);
+            _myDbContext.SaveChanges();
+        }
+
+
+
+
+
     }
 }
