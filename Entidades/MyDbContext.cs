@@ -9,8 +9,11 @@ namespace DataAccess
         public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
         {
 
+
         }
 
-     
+        public DbSet<User> Users { get; set; } = default!;
+
+
     }
 }
