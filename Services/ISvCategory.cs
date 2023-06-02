@@ -7,16 +7,9 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public interface ISvUser
+    public interface ISvCategory
     {
-        public User Add(User user);
-
-        public List<User> ListUsers();
-
-       public void Update(User user);
-       public void Delete(int id);
+        public Category Add(Category category);
 
     }
-
 }
-
