@@ -2,8 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Services;
 
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
 namespace myAPI.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class UsersController : ControllerBase
     {
         private readonly ISvUser _svUser;
@@ -11,38 +15,37 @@ namespace myAPI.Controllers
         {
             _svUser = svUser;
         }
-        // GET: api/<UsersController>
+        // GET: api/<UserController>
         [HttpGet]
-        public IEnumerable<User> Get()
+        public IEnumerable<string> Get()
         {
-            return _svUser.ListUsers();
+            return new string[] { "value1", "value2" };
         }
 
-        // GET api/<UsersController>/5
+        // GET api/<UserController>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/<UsersController>
+        // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] User user)
+        public void Post([FromBody] User value)
         {
-            _svUser.Add(user);
+            _svUser.Add(value);
         }
 
-        // PUT api/<UsersController>/5
+        // PUT api/<UserController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<UsersController>/5
+        // DELETE api/<UserController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            _svUser.Delete(id);
         }
     }
 }
