@@ -14,7 +14,7 @@ namespace Services
 
             services.AddScoped<ISvUser, SvUser>();
 
-
+           services.AddScoped< ISvCategory, SvCategory>();
 
             return services;
         }
