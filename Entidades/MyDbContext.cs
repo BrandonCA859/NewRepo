@@ -14,6 +14,7 @@ namespace DataAccess
 
         public DbSet<User> Users { get; set; } = default!;
         public DbSet<Category> Categories { get; set; } = default!;
+        public DbSet<Products> Products { get; set; } = default!;
 
     }
 }
