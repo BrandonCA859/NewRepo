@@ -13,7 +13,7 @@ namespace Services
         {
 
             services.AddScoped<ISvUser, SvUser>();
-
+            services.AddScoped<ISvOrder, SvOrder>();
 
 
             return services;
