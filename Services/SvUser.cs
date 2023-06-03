@@ -43,7 +43,7 @@ namespace Services
 
         public void Delete(int id)
         {
-            User userFound = _myDbContext.Users.Where(user => user.IdUser == id).FirstOrDefault();
+            User userFound = _myDbContext.Users.Where(user => user.Id == id).FirstOrDefault();
 
             _myDbContext.Users.Remove(userFound);
             _myDbContext.SaveChanges();
