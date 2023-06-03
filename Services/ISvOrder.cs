@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    internal interface ISvOrder
+    public interface ISvOrder
     {
 
-    public Order add (Order order);
-    public Order delate (Order order);
-    public Order Update (Order order);
+        public Order add(Order order);
+
 
     }
 }
