@@ -14,6 +14,6 @@ namespace Services
         public List<Products> ListProducts();
 
         public void Update(Products products);
-        public void Delete(int id);
+        public void Delete(int id); 
     }
 }
