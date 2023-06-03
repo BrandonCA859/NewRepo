@@ -12,7 +12,7 @@ namespace myAPI.Controllers
     {
         private readonly ISvCategory _svCategory;
 
-        public CategoryController (ISvCategory svCategory)
+        public CategoryController(ISvCategory svCategory)
         {
             _svCategory = svCategory;
         }
@@ -44,7 +44,7 @@ namespace myAPI.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
-            
+
         }
 
         // DELETE api/<CategoryController>/5
