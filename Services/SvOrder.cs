@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    internal class SvOrder : ISvOrder
-
+    public class SvOrder : ISvOrder
     {
 
         private readonly MyDbContext _myDbContext;
@@ -21,7 +20,7 @@ namespace Services
 
         public Order add(Order order)
         {
-            _myDbContext.Add(order);
+            _myDbContext.Orders.Add(order);
             _myDbContext.SaveChanges();
 
             return order;
