@@ -14,7 +14,7 @@ namespace DataAccess.Entidades
         public string Email { get; set; }
         public string Password { get; set; }
         public string Address { get; set; }
-        public DateTime birthdate { get; set; }
+        public DateTime Birthdate { get; set; }
 
     }
 }

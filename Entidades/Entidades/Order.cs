@@ -1,8 +1,7 @@
 ﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccess.Entidades
 {
@@ -13,9 +12,11 @@ namespace DataAccess.Entidades
         public List<Products> Products { get; set; }
         public List<OrderItem> Items { get; set; }
         public double TotalPrice { get; set; }
-        public PaymentConfirmation PaymentConfirmation { get; set; }
-        public DateTime Dateofpurchase { get; set; }
+        public int PaymentConfirmationId { get; set; }
 
+        public PaymentConfirmation PaymentConfirmation { get; set; }
+        public DateTime DateOfPurchase { get; set; }
     }
 }
+
 //Lo de email :)

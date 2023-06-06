@@ -11,15 +11,12 @@ namespace Services
     {
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
-
             services.AddScoped<ISvUser, SvUser>();
             services.AddScoped<ISvOrder, SvOrder>();
-
+            services.AddScoped<ISvCart, SvCart>();
 
             return services;
         }
-
-
 
     }
 }

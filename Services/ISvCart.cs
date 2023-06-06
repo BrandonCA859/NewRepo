@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public interface ISvCategory
+    public interface ISvCart
     {
-        public Category Add(Category category);
-        IEnumerable<Category> GetAll();
+        public Cart Add(Cart cart);
+        IEnumerable<Cart> GetAll();
     }
 }
