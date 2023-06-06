@@ -8,46 +8,42 @@ namespace myAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class CartController : ControllerBase
     {
-        private readonly ISvCategory _svCategory;
+        private readonly ISvCart _svCart;
 
-        public CategoryController(ISvCategory svCategory)
+        public CartController(ISvCart svCart)
         {
-            _svCategory = svCategory;
+            _svCart = svCart;
         }
-
-
-
-        // GET: api/<CategoryController>
+        // GET: api/<CartController>
         [HttpGet]
-        public IEnumerable<Category> Get()
+        public IEnumerable<Cart> Get()
         {
-            return _svCategory.GetAll();
+            return _svCart.GetAll();
         }
 
-        // GET api/<CategoryController>/5
+        // GET api/<CartController>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/<CategoryController>
+        // POST api/<CartController>
         [HttpPost]
-        public void Post([FromBody] Category category)
+        public void Post([FromBody] Cart cart)
         {
-            _svCategory.Add(category);
+            _svCart.Add(cart);
         }
 
-        // PUT api/<CategoryController>/5
+        // PUT api/<CartController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
-
         }
 
-        // DELETE api/<CategoryController>/5
+        // DELETE api/<CartController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
