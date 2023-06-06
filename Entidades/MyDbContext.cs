@@ -1,4 +1,4 @@
-﻿using DataAccess.Entidades;
+using DataAccess.Entidades;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess
@@ -29,6 +29,7 @@ namespace DataAccess
         public DbSet<Cart> Categorys { get; set; } = default!;
         public DbSet<PaymentConfirmation> PaymentConfirmations { get; set; } = default!;
         public DbSet<OrderItem> OrderItems { get; set; } = default!;
+        public DbSet<Shipping> Shipping { get; set; } = default!;
 
     }
 }
