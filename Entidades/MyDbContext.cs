@@ -14,6 +14,6 @@ namespace DataAccess
 
         public DbSet<User> Users { get; set; } = default!;
 
-
+        public DbSet<Shipping> Shipping { get; set; } = default!;
     }
 }
