@@ -4,7 +4,7 @@ using Services;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace myAPI.Controllers
+namespace MyApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -15,37 +15,38 @@ namespace myAPI.Controllers
         {
             _svUser = svUser;
         }
-        // GET: api/<UserController>
+        // GET: api/<UsersController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<User> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _svUser.ListUsers();
         }
 
-        // GET api/<UserController>/5
+        // GET api/<UsersController>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/<UserController>
+        // POST api/<UsersController>
         [HttpPost]
-        public void Post([FromBody] User value)
+        public void Post([FromBody] User user)
         {
-            _svUser.Add(value);
+            _svUser.Add(user);
         }
 
-        // PUT api/<UserController>/5
+        // PUT api/<UsersController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<UserController>/5
+        // DELETE api/<UsersController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            _svUser.Delete(id);
         }
     }
 }

@@ -1,5 +1,5 @@
-﻿using DataAccess;
-using DataAccess.Entidades;
+﻿using DataAccess.Entidades;
+using DataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,27 +8,25 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class SvCategory
+    public class SvCart : ISvCart
     {
         private readonly MyDbContext _myDbContext;
 
-        public SvCategory(MyDbContext myDbContext)
+        public SvCart(MyDbContext myDbContext)
         {
             _myDbContext = myDbContext;
         }
-        
-        
-        public Category Add(Category category)
+        public Cart Add(Cart cart)
         {
-            _myDbContext.Categories.Add(category);
+            _myDbContext.Categorys.Add(cart);
             _myDbContext.SaveChanges();
 
-            return category;
+            return cart;
         }
+
         public IEnumerable<Cart> GetAll()
         {
             return _myDbContext.Categorys.ToList();
         }
     }
-    }
-
+}

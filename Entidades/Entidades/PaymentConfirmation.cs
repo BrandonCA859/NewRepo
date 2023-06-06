@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace DataAccess.Entidades
 {
@@ -12,5 +10,9 @@ namespace DataAccess.Entidades
         public double AmountPaid { get; set; }
         public DateTime PaymentDate { get; set; }
 
+        [Key]
+        public int PaymentConfirmationId { get; set; }
+        public int OrderId { get; set; }
+        public Order Order { get; set; }
     }
 }
