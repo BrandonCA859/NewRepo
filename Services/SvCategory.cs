@@ -1,4 +1,4 @@
-﻿using DataAccess;
+using DataAccess;
 using DataAccess.Entidades;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class SvCategory 
+    public class SvCategory : ISvCategory
     {
         private readonly MyDbContext _myDbContext;
 
@@ -20,14 +20,14 @@ namespace Services
         
         public Category Add(Category category)
         {
-            _myDbContext.Categories.Add(category);
+            _myDbContext.Categorys.Add(category);
             _myDbContext.SaveChanges();
 
             return category;
         }
-        public IEnumerable<Cart> GetAll()
+        public IEnumerable<Category> GetAll()
         {
-            return _myDbContext.Carts.ToList();
+            return _myDbContext.Categorys.ToList();
         }
     }
     }
