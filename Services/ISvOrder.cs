@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public interface ISvCategory
+    public interface ISvOrder
     {
 
         public Order add(Order order);
