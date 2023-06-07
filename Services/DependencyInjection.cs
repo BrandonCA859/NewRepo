@@ -12,7 +12,7 @@ namespace Services
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
             services.AddScoped<ISvUser, SvUser>();
-            services.AddScoped<ISvCategory, SvOrder>();
+            services.AddScoped<ISvOrder, SvOrder>();
             services.AddScoped<ISvCart, SvCart>();
             services.AddScoped<ISvCategory, SvCategory>();
 
