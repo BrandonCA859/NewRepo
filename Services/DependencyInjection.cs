@@ -1,4 +1,4 @@
-﻿using DataAccess.Entidades;
+using DataAccess.Entidades;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -16,8 +16,10 @@ namespace Services
             services.AddScoped<ISvCategory, SvCategory>();
             services.AddScoped<ISvOrder, SvOrder>();
             services.AddScoped<ISvCart, SvCart>();
+            services.AddScoped<ISvOrderItem, SvOrderItem>();
             services.AddScoped<ISvShipping, SvShipping>();
             services.AddScoped<ISvProducts, SvProducts>();
+            services.AddScoped<ISvPaymentConfirmation, SvPaymentConfirmation>();
             return services;
         }
 
