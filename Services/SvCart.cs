@@ -26,7 +26,7 @@ namespace Services
 
         public IEnumerable<Cart> GetAll()
         {
-            return _myDbContext.Categorys.ToList();
+            return _myDbContext.Carts.ToList();
         }
     }
 }

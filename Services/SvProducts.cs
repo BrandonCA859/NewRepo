@@ -36,6 +36,11 @@ namespace Services
             _myDbContext.SaveChanges();
         }
 
+        public IEnumerable<Products> GetAll()
+        {
+            return _myDbContext.Products.ToList();
+        }
+
         public List<Products> ListProducts()
         {
             return _myDbContext.Products.ToList();

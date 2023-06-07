@@ -20,9 +20,9 @@ namespace myAPI.Controllers
 
         // GET: api/<ProductsController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Products> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _svProducts.GetAll();
         }
 
         // GET api/<ProductsController>/5

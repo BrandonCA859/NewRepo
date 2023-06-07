@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class SvOrder : ISvOrder
+    public class SvOrder : ISvCategory
     {
 
         private readonly MyDbContext _myDbContext;
