@@ -18,7 +18,7 @@ namespace Services
         }
         public Cart Add(Cart cart)
         {
-            _myDbContext.Categorys.Add(cart);
+            _myDbContext.Carts.Add(cart);
             _myDbContext.SaveChanges();
 
             return cart;
