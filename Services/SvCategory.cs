@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class SvCategory
+    public class SvCategory 
     {
         private readonly MyDbContext _myDbContext;
 
@@ -27,7 +27,7 @@ namespace Services
         }
         public IEnumerable<Cart> GetAll()
         {
-            return _myDbContext.Categorys.ToList();
+            return _myDbContext.Carts.ToList();
         }
     }
     }

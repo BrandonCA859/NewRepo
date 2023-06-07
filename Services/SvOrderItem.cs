@@ -8,25 +8,27 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class SvCart : ISvCart
+    public class SvOrderItem : ISvOrderItem
     {
+
+
         private readonly MyDbContext _myDbContext;
 
-        public SvCart(MyDbContext myDbContext)
+        public SvOrderItem (MyDbContext myDbContext)
         {
             _myDbContext = myDbContext;
         }
-        public Cart Add(Cart cart)
+
+        public OrderItem add(OrderItem orderItem)
         {
-            _myDbContext.Carts.Add(cart);
+            _myDbContext.OrderItems.Add(orderItem);
             _myDbContext.SaveChanges();
 
-            return cart;
+            return orderItem;
         }
 
-        public IEnumerable<Cart> GetAll()
-        {
-            return _myDbContext.Carts.ToList();
-        }
+
+
+
     }
 }

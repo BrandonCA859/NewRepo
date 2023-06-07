@@ -8,25 +8,23 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class SvCart : ISvCart
+    public class SvPaymentConfirmation : ISvPaymentConfirmation
+
     {
         private readonly MyDbContext _myDbContext;
 
-        public SvCart(MyDbContext myDbContext)
+        public SvPaymentConfirmation(MyDbContext myDbContext)
         {
             _myDbContext = myDbContext;
         }
-        public Cart Add(Cart cart)
+
+        public PaymentConfirmation add(PaymentConfirmation paymentConfirmation)
         {
-            _myDbContext.Carts.Add(cart);
+            _myDbContext.PaymentConfirmations.Add(paymentConfirmation);
             _myDbContext.SaveChanges();
 
-            return cart;
-        }
+            return paymentConfirmation;
 
-        public IEnumerable<Cart> GetAll()
-        {
-            return _myDbContext.Carts.ToList();
         }
     }
 }

@@ -26,7 +26,7 @@ namespace DataAccess
         public DbSet<Category> Categories { get; set; } = default!;
         public DbSet<Order> Orders { get; set; } = default!;
         public DbSet<Products> Products { get; set; } = default!;
-        public DbSet<Cart> Categorys { get; set; } = default!;
+        public DbSet<Cart> Carts { get; set; } = default!;
         public DbSet<PaymentConfirmation> PaymentConfirmations { get; set; } = default!;
         public DbSet<OrderItem> OrderItems { get; set; } = default!;
         public DbSet<Shipping> Shippings { get; set; } = default!;

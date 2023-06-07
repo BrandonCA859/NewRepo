@@ -10,12 +10,10 @@ IHost app = Host.CreateDefaultBuilder() // El Host es el contexto donde corre nu
     services.AddDataAccess(); // Hacemos que el Program sepa de la existencia del proyecto DataAccess y sus servicios configurados, en este caso el MyDbContext
     services.AddServices(); // Hacemos que el Program sepa de la existencia del proyecto Services y sus servicios configurados, en este caso SvUser por medio de IUser
 
+
 }).Build();//El Build inicia el Host y compila los proyectos externos para que sus servicios configurados sean entendidos por la aplicación principal
 
 var svUser = app.Services.GetRequiredService<ISvUser>();
-
-
-
 
 
 List<User> usersList = svUser.ListUsers();

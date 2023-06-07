@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Proyecto\\Proyecto.csproj": {}
+    "C:\\Users\\User\\Documents\\progra carp\\api5\\Proyecto\\Proyecto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Entidades\\DataAccess.csproj": {
+    "C:\\Users\\User\\Documents\\progra carp\\api5\\Entidades\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Entidades\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\progra carp\\api5\\Entidades\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Entidades\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Entidades\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\progra carp\\api5\\Entidades\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\progra carp\\api5\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,25 +69,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Proyecto\\Proyecto.csproj": {
+    "C:\\Users\\User\\Documents\\progra carp\\api5\\Proyecto\\Proyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Proyecto\\Proyecto.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\progra carp\\api5\\Proyecto\\Proyecto.csproj",
         "projectName": "Proyecto",
-        "projectPath": "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Proyecto\\Proyecto.csproj",
-        "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Proyecto\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\progra carp\\api5\\Proyecto\\Proyecto.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\progra carp\\api5\\Proyecto\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,11 +97,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Entidades\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Entidades\\DataAccess.csproj"
+              "C:\\Users\\User\\Documents\\progra carp\\api5\\Entidades\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\User\\Documents\\progra carp\\api5\\Entidades\\DataAccess.csproj"
               },
-              "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Services\\Services.csproj"
+              "C:\\Users\\User\\Documents\\progra carp\\api5\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\User\\Documents\\progra carp\\api5\\Services\\Services.csproj"
               }
             }
           }
@@ -149,25 +141,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Services\\Services.csproj": {
+    "C:\\Users\\User\\Documents\\progra carp\\api5\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\progra carp\\api5\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Services\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\progra carp\\api5\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\progra carp\\api5\\Services\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -181,8 +169,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Entidades\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\brand\\Music\\Proyecto Progra 2\\Entidades\\DataAccess.csproj"
+              "C:\\Users\\User\\Documents\\progra carp\\api5\\Entidades\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\User\\Documents\\progra carp\\api5\\Entidades\\DataAccess.csproj"
               }
             }
           }
@@ -196,6 +184,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[41.19.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -212,7 +206,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

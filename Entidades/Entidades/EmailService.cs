@@ -5,19 +5,32 @@ namespace Services
 {
     public class EmailService
     {
-        public void SendEmail(string toAddress, string subject, string body)
+        public bool SendEmail(string recipientEmail, string subject, string body)
         {
-            string fromAddress = "tu_correo@ejemplo.com";
-            string password = "tu_contraseña";
+            string senderEmail = " geraldelcraxk3@gmail.com";
+            string senderPassword = " jbwidxjpnmtjiszh ";
 
-            SmtpClient smtpClient = new SmtpClient("smtp.servidorcorreo.com", 587);
-            smtpClient.Credentials = new NetworkCredential(fromAddress, password);
-            smtpClient.EnableSsl = true;
+            using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587))
+            {
+                client.EnableSsl = true;
+                client.UseDefaultCredentials = false;
+                client.Credentials = new System.Net.NetworkCredential(senderEmail, senderPassword);
 
-            MailMessage mailMessage = new MailMessage(fromAddress, toAddress, subject, body);
-            mailMessage.IsBodyHtml = true;
+                MailMessage mailMessage = new MailMessage(senderEmail, recipientEmail, subject, body);
 
-            smtpClient.Send(mailMessage);
+                try
+                {
+                    client.Send(mailMessage);
+                    return true; // El correo se envió correctamente
+                }
+                catch (SmtpException ex)
+                {
+                    // Manejar cualquier error de envío de correo
+                    // Puedes imprimir o registrar el mensaje de error para su posterior análisis
+                    Console.WriteLine($"Error al enviar el correo electrónico: {ex.Message}");
+                    return false; // El correo no se pudo enviar
+                }
+            }
         }
     }
 }
