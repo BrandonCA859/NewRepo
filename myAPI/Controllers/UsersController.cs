@@ -24,11 +24,15 @@ namespace MyApi.Controllers
 
         // GET api/<UsersController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult<User> Get(int id)
         {
-            return "value";
+            var user = _svUser.GetUserById(id);
+            if (user == null)
+            {
+                return NotFound(); // Devuelve una respuesta HTTP 404 si no se encuentra el usuario
+            }
+            return user;
         }
-
         // POST api/<UsersController>
         [HttpPost]
         public void Post([FromBody] User user)

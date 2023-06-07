@@ -49,5 +49,9 @@ namespace Services
             _myDbContext.SaveChanges();
         }
 
+        public User GetUserById(int id)
+        {
+            return _myDbContext.Users.FirstOrDefault(user => user.Id == id);
+        }
     }
 }

@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace DataAccess.Entidades
 {
@@ -15,6 +14,7 @@ namespace DataAccess.Entidades
         public string Password { get; set; }
         public string Address { get; set; }
         public DateTime Birthdate { get; set; }
-
+        //public int ShippingId { get; set; }
+        //public Shipping Shipping { get; set; }
     }
 }

@@ -19,6 +19,16 @@ namespace DataAccess
 
             modelBuilder.Entity<PaymentConfirmation>()
                 .HasKey(pc => pc.PaymentConfirmationId);
+
+            modelBuilder.Entity<User>()
+                .HasKey(u => u.Id);
+
+            modelBuilder.Entity<Shipping>()
+                .HasKey(s => s.ShippingId);
+
+            // Otros mapeos y configuraciones de entidades
+
+            base.OnModelCreating(modelBuilder);
         }
 
 
@@ -30,6 +40,5 @@ namespace DataAccess
         public DbSet<PaymentConfirmation> PaymentConfirmations { get; set; } = default!;
         public DbSet<OrderItem> OrderItems { get; set; } = default!;
         public DbSet<Shipping> Shippings { get; set; } = default!;
-
     }
 }

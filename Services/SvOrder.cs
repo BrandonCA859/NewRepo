@@ -18,12 +18,17 @@ namespace Services
             _myDbContext = myDbContext;
         }
 
-        public Order add(Order order)
+        public Order Add(Order order)
         {
             _myDbContext.Orders.Add(order);
             _myDbContext.SaveChanges();
 
             return order;
+        }
+        public void CreateOrder(Order order)
+        {
+            _myDbContext.Orders.Add(order);
+            _myDbContext.SaveChanges();
         }
     }
 }

@@ -9,9 +9,8 @@ namespace Services
 {
     public interface ISvOrder
     {
+        Order Add(Order order);
 
-        public Order add(Order order);
-
-
+        void CreateOrder(Order order);
     }
 }

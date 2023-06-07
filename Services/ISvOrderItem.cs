@@ -1,5 +1,4 @@
 ﻿using DataAccess.Entidades;
-using Stripe;
 using System;
 using System.Collections.Generic;
 using System.Linq;

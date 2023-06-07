@@ -15,7 +15,7 @@ namespace Services
 
        public void Update(User user);
        public void Delete(int id);
-
+        User GetUserById(int id);
     }
 
 }
