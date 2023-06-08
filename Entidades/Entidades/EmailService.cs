@@ -1,6 +1,5 @@
 ﻿using System.Net;
 using System.Net.Mail;
-
 namespace Services
 {
     public class EmailService
