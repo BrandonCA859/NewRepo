@@ -27,28 +27,30 @@ namespace myAPI.Controllers
 
         // GET api/<ProductsController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Products Get(int id)
         {
-            return "value";
+            return _svProducts.GetById(id);
         }
 
         // POST api/<ProductsController>
         [HttpPost]
-        public void Post([FromBody] Products value)
+        public void Post([FromBody] Products products)
         {
-            _svProducts.Add(value);
+            _svProducts.Add(products);
         }
 
         // PUT api/<ProductsController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, [FromBody] Products products)
         {
+            _svProducts.Add(products);
         }
 
         // DELETE api/<ProductsController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            _svProducts.Delete(id);
 
         }
     }

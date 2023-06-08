@@ -19,20 +19,6 @@ namespace myAPI.Controllers
             _svOrder = svOrder;
         }
 
-        // GET: api/<OrderController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/<OrderController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
         // POST api/<OrderController>
         [HttpPost("add")]
         public void AddOrder([FromBody] Order order)
@@ -40,17 +26,6 @@ namespace myAPI.Controllers
             _svOrder.Add(order);
         }
 
-        // PUT api/<OrderController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<OrderController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
 
         [HttpPost("create")]
         public IActionResult CreateOrder(Order order)

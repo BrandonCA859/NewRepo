@@ -16,5 +16,6 @@ namespace Services
         public void Update(Products products);
         public void Delete(int id);
         IEnumerable<Products> GetAll();
+        Products GetById(int id);
     }
 }

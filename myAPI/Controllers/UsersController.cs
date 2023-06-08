@@ -21,18 +21,6 @@ namespace MyApi.Controllers
         {
             return _svUser.ListUsers();
         }
-
-        // GET api/<UsersController>/5
-        [HttpGet("{id}")]
-        public ActionResult<User> Get(int id)
-        {
-            var user = _svUser.GetUserById(id);
-            if (user == null)
-            {
-                return NotFound(); // Devuelve una respuesta HTTP 404 si no se encuentra el usuario
-            }
-            return user;
-        }
         // POST api/<UsersController>
         [HttpPost]
         public void Post([FromBody] User user)
@@ -40,17 +28,5 @@ namespace MyApi.Controllers
             _svUser.Add(user);
         }
 
-        // PUT api/<UsersController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<UsersController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-            _svUser.Delete(id);
-        }
     }
 }

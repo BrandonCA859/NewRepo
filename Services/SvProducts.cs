@@ -41,6 +41,11 @@ namespace Services
             return _myDbContext.Products.ToList();
         }
 
+        public Products GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Products> ListProducts()
         {
             return _myDbContext.Products.ToList();

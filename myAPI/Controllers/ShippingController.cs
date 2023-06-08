@@ -16,32 +16,12 @@ namespace myAPI.Controllers
             _svShipping = svShipping;
         }
 
-        // GET: api/<ShippingController>
-        [HttpGet]
-        public IEnumerable<Shipping> Get()
-        {
-            return _svShipping.ListShippings();
-        }
-
-        // GET api/<ShippingController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
         // POST api/<ShippingController>
         [HttpPost]
-        public void Post([FromBody] Shipping value)
+        public void Post([FromBody] Shipping shipping)
         {
-            _svShipping.Add(value);
+            _svShipping.Add(shipping);
         }
 
-        // POST api/<ShippingController>
-        [HttpPost("{id}")]
-        public void Add(int id, [FromBody] Shipping value)
-        {
-            _svShipping.Add(value);
-        }
     }
 }
