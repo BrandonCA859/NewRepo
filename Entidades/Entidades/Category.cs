@@ -8,9 +8,9 @@ namespace DataAccess.Entidades
 {
     public class Category
     {
-        public int Id { get; set; }
-        public string Categories{ get; set; }
-        public string Description { get; set; }
-        public List<Products> Products { get; set; }
+        public int? Id { get; set; }
+        public string? Categories{ get; set; }
+        public string? Description { get; set; }
+        public List<Products>? Products { get; set; }
     }
 }

@@ -82,7 +82,7 @@ namespace myAPI.Controllers
             using (var client = new MailKit.Net.Smtp.SmtpClient())
             {
                 client.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-                client.Authenticate("hezroncastaneda@gmail.com", "vbpfwcecrcmteyuv");
+                client.Authenticate("juandla78966@gmail.com", "irfxidytuwxdllxp");
                 client.Send(message);
                 client.Disconnect(true);
             }

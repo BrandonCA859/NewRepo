@@ -7,8 +7,8 @@ namespace Services
     {
         public bool SendEmail(string recipientEmail, string subject, string body)
         {
-            string senderEmail = " geraldelcraxk3@gmail.com";
-            string senderPassword = " jbwidxjpnmtjiszh ";
+            string senderEmail = "juandla78966@gmail.com";
+            string senderPassword = "irfxidytuwxdllxp";
 
             using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587))
             {

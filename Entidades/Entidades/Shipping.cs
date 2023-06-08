@@ -11,14 +11,14 @@ namespace DataAccess.Entidades
     {
         [Key]
         public int ShippingId { get; set; }
-        public string City { get; set; }
-        public string Province { get; set; }
-        public string Country { get; set; }
-        public string Postal_Code { get; set; }
-        public string AdditionalInfo { get; set; }
+        public string? City { get; set; }
+        public string? Province { get; set; }
+        public string? Country { get; set; }
+        public string? Postal_Code { get; set; }
+        public string? AdditionalInfo { get; set; }
 
         // Relacion
-        public List<User> Users { get; set; }
+        public List<User>? Users { get; set; }
 
     }
 }
