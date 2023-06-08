@@ -51,7 +51,7 @@ namespace myAPI.Controllers
             message.Subject = "Confirmación de pedido";
 
             var bodyBuilder = new BodyBuilder();
-            bodyBuilder.TextBody = $"Gracias por tu pedido. Tu número de pedido es {order.Id} y el total a pagar es {order.TotalPrice} colones. Su método de pago fue por medio de: {order.PaymentConfirmation.PaymentMethod}";
+            bodyBuilder.TextBody = $"Gracias por tu pedido. Tu número de pedido es {order.Id} y el total a pagar es {order.TotalPrice}";
             message.Body = bodyBuilder.ToMessageBody();
 
             using (var client = new MailKit.Net.Smtp.SmtpClient())

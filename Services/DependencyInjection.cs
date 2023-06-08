@@ -19,7 +19,6 @@ namespace Services
             services.AddScoped<ISvOrderItem, SvOrderItem>();
             services.AddScoped<ISvShipping, SvShipping>();
             services.AddScoped<ISvProducts, SvProducts>();
-            services.AddScoped<ISvPaymentConfirmation, SvPaymentConfirmation>();
             return services;
         }
 

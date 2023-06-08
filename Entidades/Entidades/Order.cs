@@ -12,9 +12,7 @@ namespace DataAccess.Entidades
         public List<Products>? Products { get; set; }
         public List<OrderItem>? Items { get; set; }
         public double TotalPrice { get; set; }
-        public int PaymentConfirmationId { get; set; }
         public string? Address { get; set; }
-        public PaymentConfirmation PaymentConfirmation { get; set; }
         public DateTime DateOfPurchase { get; set; }
 
     }
