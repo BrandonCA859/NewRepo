@@ -14,7 +14,5 @@ namespace DataAccess.Entidades
         public string Password { get; set; }
         public string Address { get; set; }
         public DateTime Birthdate { get; set; }
-        //public int ShippingId { get; set; }
-        //public Shipping Shipping { get; set; }
     }
 }
