@@ -9,8 +9,7 @@ namespace DataAccess.Entidades
     {
         public int? Id { get; set; }
         public int? UserId { get; set; }
-        public List<Products>? Products { get; set; }
-        public List<OrderItem>? Items { get; set; }
+        public List<OrderItem>? Products { get; set; }
         public double TotalPrice { get; set; }
         public string? Address { get; set; }
         public DateTime DateOfPurchase { get; set; }
