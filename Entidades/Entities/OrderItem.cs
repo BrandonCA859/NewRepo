@@ -6,8 +6,8 @@ namespace DataAccess.Entidades
     {
         public int? Id { get; set; }
         public int? OrderId { get; set; }
-        public int? ProductId { get; set; }
-        public  Products products { get; set; }
+        public int ProductId { get; set; }
+        public  Product? product { get; set; }
         public int? Quantity { get; set; }
         public double? Subtotal { get; set; }
     }

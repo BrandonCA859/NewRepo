@@ -2233,24 +2233,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\brand\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Daniel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brand\\Music\\Proyecto #1\\Proyecto\\Proyecto.csproj",
+      "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\ProyectoProgra-parte02\\Proyecto\\Proyecto.csproj",
       "projectName": "Proyecto",
-      "projectPath": "C:\\Users\\brand\\Music\\Proyecto #1\\Proyecto\\Proyecto.csproj",
-      "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brand\\Music\\Proyecto #1\\Proyecto\\obj\\",
+      "projectPath": "C:\\Users\\Daniel\\Desktop\\ProyectoProgra-parte02\\Proyecto\\Proyecto.csproj",
+      "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Daniel\\Desktop\\ProyectoProgra-parte02\\Proyecto\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2264,11 +2259,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\brand\\Music\\Proyecto #1\\Entidades\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\brand\\Music\\Proyecto #1\\Entidades\\DataAccess.csproj"
+            "C:\\Users\\Daniel\\Desktop\\ProyectoProgra-parte02\\Entidades\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Daniel\\Desktop\\ProyectoProgra-parte02\\Entidades\\DataAccess.csproj"
             },
-            "C:\\Users\\brand\\Music\\Proyecto #1\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\brand\\Music\\Proyecto #1\\Services\\Services.csproj"
+            "C:\\Users\\Daniel\\Desktop\\ProyectoProgra-parte02\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\Daniel\\Desktop\\ProyectoProgra-parte02\\Services\\Services.csproj"
             }
           }
         }
@@ -2308,7 +2303,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

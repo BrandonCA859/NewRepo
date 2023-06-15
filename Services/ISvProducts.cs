@@ -1,4 +1,4 @@
-﻿using DataAccess.Entidades;
+using DataAccess.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +9,13 @@ namespace Services
 {
     public interface ISvProducts
     {
-        public Products Add(Products products);
+        public Product Add(Product products);
 
-        public List<Products> ListProducts();
+        public List<Product> ListProducts();
 
-        public Products Update(Products products, int id);
-        public void Delete( int id);
-        IEnumerable<Products> GetAll();
-        Products GetById(int id);
+        public void Update(Product products);
+        public void Delete(int id);
+        IEnumerable<Product> GetAll();
+        Product GetById(int id);
     }
 }

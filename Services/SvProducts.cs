@@ -1,4 +1,4 @@
-﻿using DataAccess;
+using DataAccess;
 using DataAccess.Entidades;
 using System;
 using System.Collections.Generic;
@@ -20,7 +20,7 @@ namespace Services
             _myDbContext = myDbContext;
         }
 
-        public Products Add(Products products)
+        public Product Add(Product products)
         {
             _myDbContext.Products.Add(products);
             _myDbContext.SaveChanges();
@@ -30,36 +30,32 @@ namespace Services
 
         public void Delete(int id)
         {
-            Products ProductsFound = _myDbContext.Products.Where(Products => Products.Id == id).First();
-            _myDbContext.Products.Remove(ProductsFound);
+            Product productsFound = _myDbContext.Products.Where(products => products.Id == id).FirstOrDefault();
+
+            _myDbContext.Products.Remove(productsFound);
             _myDbContext.SaveChanges();
         }
 
-        public IEnumerable<Products> GetAll()
+        public IEnumerable<Product> GetAll()
         {
             return _myDbContext.Products.ToList();
         }
 
-        public Products GetById(int id)
+        public Product GetById(int id)
         {
-            return _myDbContext.Products.Where(Products => Products.Id == id).First();
+            Product productFound = _myDbContext.Products.Where(products => products.Id == id).FirstOrDefault();
+
+            return productFound;
         }
 
-        public List<Products> ListProducts()
+        public List<Product> ListProducts()
         {
             return _myDbContext.Products.ToList();
         }
 
-
-        public Products Update(Products products, int id)
+        public void Update(Product products)
         {
-            Products ProductsFound = _myDbContext.Products.Where(Products => Products.Id == id).First();
-            ProductsFound.Id = ProductsFound.Id;
-
-            _myDbContext.Products.Update(ProductsFound);
-            _myDbContext.SaveChanges();
-
-            return ProductsFound;
+            Console.WriteLine("Update");
         }
     }
 }
