@@ -17,8 +17,7 @@ namespace DataAccess.Entidades
         public string? Postal_Code { get; set; }
         public string? AdditionalInfo { get; set; }
 
-        // Relacion
-        //public List<User>? Users { get; set; }
+      
 
     }
 }

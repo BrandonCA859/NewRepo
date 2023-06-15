@@ -20,28 +20,28 @@ namespace myAPI.Controllers
 
         // GET: api/<ProductsController>
         [HttpGet]
-        public IEnumerable<Products> Get()
+        public IEnumerable<Product> Get()
         {
             return _svProducts.GetAll();
         }
 
         // GET api/<ProductsController>/5
         [HttpGet("{id}")]
-        public Products Get(int id)
+        public Product Get(int id)
         {
             return _svProducts.GetById(id);
         }
 
         // POST api/<ProductsController>
         [HttpPost]
-        public void Post([FromBody] Products products)
+        public void Post([FromBody] Product products)
         {
             _svProducts.Add(products);
         }
 
         // PUT api/<ProductsController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Products products)
+        public void Put(int id, [FromBody] Product products)
         {
             _svProducts.Add(products);
         }

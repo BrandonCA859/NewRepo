@@ -20,7 +20,7 @@ namespace Services
             _myDbContext = myDbContext;
         }
 
-        public Products Add(Products products)
+        public Product Add(Product products)
         {
             _myDbContext.Products.Add(products);
             _myDbContext.SaveChanges();
@@ -30,28 +30,30 @@ namespace Services
 
         public void Delete(int id)
         {
-            Products productsFound = _myDbContext.Products.Where(products => products.Id == id).FirstOrDefault();
+            Product productsFound = _myDbContext.Products.Where(products => products.Id == id).FirstOrDefault();
 
             _myDbContext.Products.Remove(productsFound);
             _myDbContext.SaveChanges();
         }
 
-        public IEnumerable<Products> GetAll()
+        public IEnumerable<Product> GetAll()
         {
             return _myDbContext.Products.ToList();
         }
 
-        public Products GetById(int id)
+        public Product GetById(int id)
         {
-            throw new NotImplementedException();
+            Product productFound = _myDbContext.Products.Where(products => products.Id == id).FirstOrDefault();
+
+            return productFound;
         }
 
-        public List<Products> ListProducts()
+        public List<Product> ListProducts()
         {
             return _myDbContext.Products.ToList();
         }
 
-        public void Update(Products products)
+        public void Update(Product products)
         {
             Console.WriteLine("Update");
         }
