@@ -62,7 +62,9 @@ namespace myAPI.Controllers
                 client.Disconnect(true);
             }
         }
+
+        }
     }
-}
+
 
 

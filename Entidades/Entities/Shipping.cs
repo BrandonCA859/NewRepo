@@ -18,7 +18,7 @@ namespace DataAccess.Entidades
         public string? AdditionalInfo { get; set; }
 
         // Relacion
-        public List<User>? Users { get; set; }
+        //public List<User>? Users { get; set; }
 
     }
 }
