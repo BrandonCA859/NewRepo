@@ -51,9 +51,16 @@ namespace Services
             return _myDbContext.Products.ToList();
         }
 
-        public void Update(Products products)
+
+        public void Update(Products products, int id)
         {
-            Console.WriteLine("Update");
+            Products ProductsFound = _myDbContext.Products.Where(Products => Products.Id == id).First();
+            ProductsFound.Id = ProductsFound.Id;
+
+            _myDbContext.Products.Update(ProductsFound);
+            _myDbContext.SaveChanges();
+
+            return ProductsFound;
         }
     }
 }
