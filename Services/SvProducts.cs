@@ -30,9 +30,8 @@ namespace Services
 
         public void Delete(int id)
         {
-            Products productsFound = _myDbContext.Products.Where(products => products.Id == id).FirstOrDefault();
-
-            _myDbContext.Products.Remove(productsFound);
+            Products ProductsFound = _myDbContext.Products.Where(Products => Products.Id == id).First();
+            _myDbContext.Products.Remove(ProductsFound);
             _myDbContext.SaveChanges();
         }
 
@@ -43,7 +42,7 @@ namespace Services
 
         public Products GetById(int id)
         {
-            throw new NotImplementedException();
+            return _myDbContext.Products.Where(Products => Products.Id == id).First();
         }
 
         public List<Products> ListProducts()
@@ -52,7 +51,7 @@ namespace Services
         }
 
 
-        public void Update(Products products, int id)
+        public Products Update(Products products, int id)
         {
             Products ProductsFound = _myDbContext.Products.Where(Products => Products.Id == id).First();
             ProductsFound.Id = ProductsFound.Id;
