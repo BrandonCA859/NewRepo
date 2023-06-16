@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public interface ISvProducts
+    public interface ISvProduct
     {
         public Product Add(Product products);
 
         public List<Product> ListProducts();
 
-        public void Update(Product products);
+        public Product Update(Product products, int id);
         public void Delete(int id);
         IEnumerable<Product> GetAll();
         Product GetById(int id);
