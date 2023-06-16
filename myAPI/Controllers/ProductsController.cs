@@ -11,8 +11,8 @@ namespace myAPI.Controllers
     public class ProductsController : ControllerBase
     {
 
-        private readonly ISvProducts _svProducts;
-        public ProductsController(ISvProducts svProducts)
+        private readonly ISvProduct _svProducts;
+        public ProductsController(ISvProduct svProducts)
         {
             _svProducts = svProducts;
         }

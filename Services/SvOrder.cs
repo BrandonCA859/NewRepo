@@ -15,8 +15,8 @@ namespace Services
     {
 
         private readonly MyDbContext _myDbContext;
-        private readonly ISvProducts _svProducts;
-        public SvOrder(MyDbContext myDbContext, ISvProducts svProducts)
+        private readonly ISvProduct _svProducts;
+        public SvOrder(MyDbContext myDbContext, ISvProduct svProducts)
         {
             _svProducts = svProducts;
             _myDbContext = myDbContext;

@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class SvProducts : ISvProducts
+    public class SvProduct : ISvProduct
     {
 
         private readonly MyDbContext _myDbContext;
 
 
-        public SvProducts(MyDbContext myDbContext)
+        public SvProduct(MyDbContext myDbContext)
 
         {
             _myDbContext = myDbContext;
@@ -53,9 +53,17 @@ namespace Services
             return _myDbContext.Products.ToList();
         }
 
-        public void Update(Product products)
+      
+
+        public Product Update( Product products, int id)
         {
-            Console.WriteLine("Update");
+            Product ProductFound = _myDbContext.Products.Where(Product => Product.Id == id).First();
+            ProductFound.Name = ProductFound.Name;
+
+            _myDbContext.Products.Update(ProductFound);
+            _myDbContext.SaveChanges();
+
+            return ProductFound;
         }
     }
 }
